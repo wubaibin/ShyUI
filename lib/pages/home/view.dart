@@ -26,6 +26,7 @@ class HomePage extends GetView<HomeController> {
                 children: [
                   _buildTitle("基础组件"),
                   const ListWidget(title: 'Button 按钮', url: '/button'),
+                  const ListWidget(title: 'Icon 图标', url: '/icon'),
                 ],
               ),
             ),

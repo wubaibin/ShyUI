@@ -1,5 +1,6 @@
 import 'package:flutter_face/pages/button/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
+import 'package:flutter_face/pages/icon/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/user/index.dart';
 import 'package:get/get.dart';
@@ -29,6 +30,11 @@ class AppPages {
       name: AppRoutes.buttonPage,
       page: () => const ButtonPage(),
       binding: ButtonBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.iconPage,
+      page: () => const IconPage(),
+      binding: IconBinding(),
     ),
   ];
 }
