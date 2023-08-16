@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../index.dart';
 
 /// hello
-class HelloWidget extends GetView<MainController> {
+class HelloWidget extends GetView<UserController> {
   const HelloWidget({Key? key}) : super(key: key);
 
   @override

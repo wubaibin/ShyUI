@@ -7,7 +7,7 @@ class TouchableHighlight extends StatefulWidget {
   final EdgeInsetsGeometry? padding;
   final BorderRadius borderRadius;
   final Color bgColor;
-  final List<Color>? bgColors;
+  final LinearGradient? gradient;
   final double activeOpacity;
   final Color activeBgColor;
   final Function? onPress;
@@ -20,7 +20,7 @@ class TouchableHighlight extends StatefulWidget {
   /// [padding] 容器的padding
   /// [borderRadius] 容器的圆角
   /// [bgColor] 设置容器背景颜色
-  /// [bgColors] 设置容器背景颜色渐变 设置bgColors,bgColor失效
+  /// [gradient] 设置容器背景颜色渐变
   /// [activeBgColor] 容器被按下的不透明颜色
   /// [activeOpacity] 容器被按下的不透明颜色的透明度
   /// [onPress] 按下事件
@@ -33,7 +33,7 @@ class TouchableHighlight extends StatefulWidget {
     this.padding,
     this.borderRadius = const BorderRadius.all(Radius.circular(0)),
     this.bgColor = Colors.white,
-    this.bgColors,
+    this.gradient,
     this.activeOpacity = 0.2,
     this.activeBgColor = const Color(0xFF333333),
     this.onPress,
@@ -84,13 +84,8 @@ class _TouchableHighlightState extends State<TouchableHighlight> {
             ),
             decoration: BoxDecoration(
               borderRadius: widget.borderRadius,
-              gradient: LinearGradient(
-                colors: widget.bgColors ??
-                    [
-                      widget.bgColor,
-                      widget.bgColor,
-                    ],
-              ),
+              gradient: widget.gradient,
+              color: widget.bgColor,
             ),
             child: widget.child,
           ),

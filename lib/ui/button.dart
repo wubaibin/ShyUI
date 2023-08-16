@@ -9,8 +9,9 @@ import 'package:flutter_face/utils/common.dart';
 /// [mini] 小按钮
 /// [medium] 中按钮
 /// [large] 大按钮
+/// [long] 通栏按钮
 /// ```
-enum ButtonSize { mini, medium, large }
+enum ButtonSize { mini, medium, large, long }
 
 /// 形状
 /// ```
@@ -36,7 +37,7 @@ class Button extends StatelessWidget {
   final FontWeight? fontWidget;
   final Color color;
   final Color bgColor;
-  final List<Color>? bgColors;
+  final LinearGradient? gradient;
   final String? icon;
   final double iconSize;
   final Color? iconColor;
@@ -62,6 +63,7 @@ class Button extends StatelessWidget {
   /// [height] 按钮自定义高度
   /// [size] 按钮大小
   /// [shape] 按钮形状
+  /// 按钮优先级 disabled > plain > 普通
   /// [plain] 按钮镂空状态 镂空状态下无法使用bgColor、color
   ///         想要自定义颜色,请使用plainColor、plainBgColor、plainBorderColor
   /// [disabled] 按钮禁用状态 禁用状态下无法使用loading下的功能及bgColor、bgColors、color
@@ -72,7 +74,7 @@ class Button extends StatelessWidget {
   /// [fontWeight] 按钮文字粗细
   /// [color] 按钮文字颜色
   /// [bgColor] 按钮背景颜色
-  /// [bgColors] 按钮背景颜色渐变 设置bgColors,bgColor将无效
+  /// [gradient] 按钮背景颜色渐变
   /// [icon] 按钮icon
   /// [iconSize] 按钮icon大小
   /// [iconColor] 按钮icon 颜色 默认是 color
@@ -82,7 +84,6 @@ class Button extends StatelessWidget {
   /// [loadingColor] 加载效果颜色 默认是 color
   /// [loadingStrokeWidth] 加载效果的宽度
   /// [loadingOpacity] 加载效果的透明度
-  /// 按钮优先级 disabled > plain > 普通
   /// ```
   Button({
     super.key,
@@ -101,7 +102,7 @@ class Button extends StatelessWidget {
     this.fontWidget,
     this.color = Colors.white,
     this.bgColor = AppColor.themeColor,
-    this.bgColors,
+    this.gradient,
     this.icon,
     this.iconSize = 16,
     this.iconColor,
@@ -123,7 +124,7 @@ class Button extends StatelessWidget {
   final double circle = 8;
   final double semicircle = 100;
   final Map<String, dynamic> mini = {
-    'width': 66.0,
+    'width': 60.0,
     'height': 28.0,
     'fontSize': 12.0,
     'fontWidget': FontWeight.normal,
@@ -133,18 +134,26 @@ class Button extends StatelessWidget {
   final Map<String, dynamic> medium = {
     'width': 80.0,
     'height': 32.0,
-    'fontSize': 15.0,
+    'fontSize': 13.0,
     'fontWidget': FontWeight.normal,
-    'padding': const EdgeInsets.symmetric(horizontal: 16),
+    'padding': const EdgeInsets.symmetric(horizontal: 10),
     'margin': const EdgeInsets.only(right: 6),
   };
   final Map<String, dynamic> large = {
-    'width': double.infinity,
+    'width': 320.0,
     'height': 46.0,
     'fontSize': 16.0,
     'fontWidget': FontWeight.normal,
     'padding': const EdgeInsets.symmetric(horizontal: 12),
-    'margin': const EdgeInsets.only(right: 6),
+    'margin': const EdgeInsets.only(right: 12),
+  };
+  final Map<String, dynamic> long = {
+    'width': double.infinity,
+    'height': 46.0,
+    'fontSize': 16.0,
+    'fontWidget': FontWeight.normal,
+    'padding': const EdgeInsets.symmetric(horizontal: 16),
+    'margin': const EdgeInsets.only(right: 12),
   };
   final Map disabledStyle = {
     'color': AppColor.threearyText,
@@ -152,7 +161,7 @@ class Button extends StatelessWidget {
   };
   final Map plainStyle = {
     'color': AppColor.primaryText,
-    'bgColor': Colors.white,
+    'bgColor': Colors.transparent,
     'borderColor': AppColor.placeholderText,
   };
 
@@ -163,7 +172,10 @@ class Button extends StatelessWidget {
     if (size == ButtonSize.medium) {
       return medium;
     }
-    return large;
+    if (size == ButtonSize.large) {
+      return large;
+    }
+    return long;
   }
 
   BorderRadius initBorderRadius() {
@@ -243,7 +255,7 @@ class Button extends StatelessWidget {
         padding: padding ?? style['padding'],
         borderRadius: borderRadius,
         bgColor: bgColor,
-        bgColors: bgColors,
+        gradient: gradient,
         onPress: throttle
             ? Common.throttle(() {
                 if (onPress != null) {

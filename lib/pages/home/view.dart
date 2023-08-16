@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_face/styles/index.dart';
+import 'package:flutter_face/ui/appbar.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';
@@ -7,22 +9,36 @@ import 'widgets/widgets.dart';
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
 
-  // 主视图
-  Widget _buildView() {
-    return const HelloWidget();
-  }
-
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(
+      id: "home",
+      init: HomeController(),
       builder: (_) {
         return Scaffold(
-          appBar: AppBar(title: const Text("home")),
-          body: SafeArea(
-            child: _buildView(),
+          backgroundColor: Colors.white,
+          appBar: const AppBarWidget(title: "首页", leading: SizedBox()),
+          body: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _buildTitle("基础组件"),
+                  const ListWidget(title: 'Button 按钮', url: '/button'),
+                ],
+              ),
+            ),
           ),
         );
       },
+    );
+  }
+
+  Widget _buildTitle(String title) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 12, top: 16),
+      child: Text(title, style: CommonStyle.secondaryText14),
     );
   }
 }

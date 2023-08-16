@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
 final Map<String, IconData> iconName = {
-  'success': const IconData(0xe722, fontFamily: 'IconFont'),
-  'back': const IconData(0xe62d, fontFamily: 'IconFont'),
+  'home': const IconData(0xe6de, fontFamily: 'IconFont'),
+  'user': const IconData(0xe6df, fontFamily: 'IconFont'),
 };

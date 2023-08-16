@@ -1,14 +1,7 @@
 import 'package:flutter_face/config/index.dart';
 import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/icon/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-/// 返回类型
-/// ```
-/// [none] 没有返回
-/// [back] 返回箭头
-/// ```
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -68,9 +61,9 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         }
         Get.back();
       },
-      child: IconFont(
-        name: 'back',
-        size: 18,
+      child: Icon(
+        Icons.arrow_back_ios_rounded,
+        size: 22,
         color: color,
       ),
     );
