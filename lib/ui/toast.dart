@@ -69,7 +69,7 @@ class $toast {
 
   /// 显示 loading 提示框。需主动调用 hideLoading 或 showToast 关闭提示框
   /// ```
-  /// [title] 提示的内容 文本最多显示 7 个汉字长度
+  /// [title] 提示的内容 文本最多显示3行
   /// [mask] 是否显示透明蒙层，防止触摸穿透
   /// [maskClose] 是否点击透明蒙层关闭
   /// ```
@@ -119,7 +119,7 @@ class $toast {
       padding: const EdgeInsets.all(15),
       decoration: const BoxDecoration(
         color: _bgColor,
-        borderRadius: BorderRadius.all(Radius.circular(5)),
+        borderRadius: BorderRadius.all(Radius.circular(8)),
       ),
       child: Text(
         title,
@@ -165,7 +165,7 @@ class $toast {
                   )
                 : IconFont(name: icon!, color: _color, size: 36),
             Container(
-              margin: const EdgeInsets.only(top: 32),
+              margin: const EdgeInsets.only(top: 28),
               child: Text(
                 title,
                 maxLines: 3,

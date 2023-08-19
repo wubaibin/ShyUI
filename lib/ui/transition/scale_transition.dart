@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ScaleContainer extends StatefulWidget {
+class ScaleTransitionWidget extends StatefulWidget {
   final Widget? child;
   final double scale;
   final int duration;
@@ -12,7 +12,7 @@ class ScaleContainer extends StatefulWidget {
   /// [scale] 缩小幅度
   /// [duration] 过渡时间
   /// ```
-  const ScaleContainer({
+  const ScaleTransitionWidget({
     super.key,
     required this.child,
     this.scale = 0.1,
@@ -21,10 +21,10 @@ class ScaleContainer extends StatefulWidget {
   });
 
   @override
-  State<ScaleContainer> createState() => _ScaleContainerState();
+  State<ScaleTransitionWidget> createState() => _ScaleTransitionWidgetState();
 }
 
-class _ScaleContainerState extends State<ScaleContainer>
+class _ScaleTransitionWidgetState extends State<ScaleTransitionWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 

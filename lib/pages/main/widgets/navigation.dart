@@ -101,7 +101,7 @@ class NavigationWidget extends GetView<MainController> {
           horizontal: 5,
         ),
         decoration: BoxDecoration(
-          color: AppColor.warningColor,
+          color: AppColor.errorColor,
           border: Border.all(color: Colors.white),
           borderRadius: BorderRadius.circular(10),
         ),

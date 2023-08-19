@@ -13,6 +13,9 @@ abstract class AppRoutes {
   /// 图标
   static const iconPage = '/icon';
 
+  /// 图标
+  static const toastPage = '/toast';
+
   /// 我的
   static const userPage = '/user';
 }

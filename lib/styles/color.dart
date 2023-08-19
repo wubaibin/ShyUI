@@ -31,12 +31,12 @@ class AppColor {
   /// 页面背景颜色 五级
   static const Color bgColor = Color(0xFFF2F8F6);
 
-  /// 线条颜色
-  static const Color lineColor = Color(0xFFF7F9F8);
-
   /// 蒙版颜色
   static const Color maskBgColor = Color.fromRGBO(0, 0, 0, 0.5);
 
+  /// 错误颜色
+  static const Color errorColor = Color(0xFFFF665C);
+
   /// 警告颜色
-  static const Color warningColor = Color(0xFFFF665C);
+  static const Color warningColor = Color(0xFFFFB73B);
 }
