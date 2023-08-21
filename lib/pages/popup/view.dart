@@ -45,6 +45,13 @@ class PopupPage extends GetView<PopupController> {
               borderRadius: const BorderRadius.all(Radius.circular(12)),
               onPress: _.listRadiusTap,
             ),
+            const DetailTitleWidget(title: '锁定弹窗', top: 20),
+            const SizedBox(height: 8),
+            ListContainerWidget(
+              title: '锁定弹窗',
+              borderRadius: const BorderRadius.all(Radius.circular(12)),
+              onPress: _.listLockTap,
+            ),
           ],
         );
       },

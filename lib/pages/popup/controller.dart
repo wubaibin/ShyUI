@@ -44,4 +44,13 @@ class PopupController extends GetxController {
       ),
     );
   }
+
+  void listLockTap() {
+    $popup.show(
+      locked: true,
+      child: const SizedBox(
+        height: 300,
+      ),
+    );
+  }
 }
