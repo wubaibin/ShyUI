@@ -13,8 +13,11 @@ abstract class AppRoutes {
   /// 图标
   static const iconPage = '/icon';
 
-  /// 图标
+  /// 轻提示
   static const toastPage = '/toast';
+
+  /// 弹出层
+  static const popupPage = '/popup';
 
   /// 我的
   static const userPage = '/user';

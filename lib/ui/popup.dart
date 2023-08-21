@@ -13,16 +13,26 @@ class $popup {
   /// 显示弹出层
   /// ```
   /// [child] 子组件
+  /// [title] 标题
+  /// [titleStyle] 自定义标题样式
   /// [locked] 弹出层锁定状态 值为true 点击背景不会被关闭
   /// [bgColor] 弹出层组件背景颜色
   /// [overlyBgColor] 弹出层背景颜色
   /// [duration] 动画过渡时间
   /// [borderRadius] 圆角
   /// [safeArea] 是否留出安全距离
+  /// [onCloseTap] 自定义关闭按钮事件
   /// [clear] 是否展示关闭icon
+  /// [clearWidget] 自定义关闭按钮
   /// ```
   static void show({
     required Widget child,
+    String? title,
+    TextStyle titleStyle = const TextStyle(
+      fontSize: 17,
+      color: AppColor.primaryText,
+      fontWeight: FontWeight.w600,
+    ),
     bool locked = false,
     Color bgColor = Colors.white,
     Color overlyBgColor = AppColor.maskBgColor,
@@ -30,8 +40,8 @@ class $popup {
     double borderRadius = 18,
     bool safeArea = true,
     Function? onCloseTap,
-    String? title,
     bool clear = false,
+    Widget? clearWidget,
   }) {
     showModalBottomSheet(
       isScrollControlled: true,
@@ -47,6 +57,7 @@ class $popup {
       builder: (context) => Stack(
         children: [
           Container(
+            width: double.infinity,
             padding: EdgeInsets.only(
               bottom: safeArea ? MediaQuery.of(context).padding.bottom : 0,
             ),
@@ -69,18 +80,15 @@ class $popup {
                         padding: const EdgeInsets.only(top: 12),
                         child: Text(
                           title,
-                          style: const TextStyle(
-                            fontSize: 17,
-                            color: AppColor.primaryText,
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: titleStyle,
                         ),
                       ),
                       child,
                     ],
                   ),
           ),
-          if (clear)
+          if (clearWidget != null) clearWidget,
+          if (clear && clearWidget == null)
             Positioned(
               top: 11,
               right: 17,
