@@ -59,7 +59,7 @@ class Input extends StatefulWidget {
     this.textAlign = TextAlign.left,
     this.autofocus = false,
     this.confirmType = TextInputAction.done,
-    this.clear = true,
+    this.clear = false,
     this.clearPadding = const EdgeInsets.fromLTRB(6, 0, 15, 0),
     this.style = const TextStyle(
       color: AppColor.primaryText,

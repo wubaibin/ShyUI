@@ -1,0 +1,3 @@
+class InputState {
+  String value = "";
+}

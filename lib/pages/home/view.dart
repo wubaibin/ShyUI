@@ -29,6 +29,8 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'Icon 图标', url: '/icon'),
                   const ListWidget(title: 'Popup 弹出层', url: '/popup'),
                   const ListWidget(title: 'Toast 轻提示', url: '/toast'),
+                  _buildTitle("表单组件"),
+                  const ListWidget(title: 'Input 输入框', url: '/input'),
                 ],
               ),
             ),

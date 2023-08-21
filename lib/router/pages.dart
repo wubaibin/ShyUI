@@ -1,6 +1,7 @@
 import 'package:flutter_face/pages/button/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
+import 'package:flutter_face/pages/input/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/toast/index.dart';
@@ -47,6 +48,11 @@ class AppPages {
       name: AppRoutes.popupPage,
       page: () => const PopupPage(),
       binding: PopupBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.inputPage,
+      page: () => const InputPage(),
+      binding: InputBinding(),
     ),
   ];
 }
