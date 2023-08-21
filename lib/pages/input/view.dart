@@ -24,10 +24,8 @@ class InputPage extends GetView<InputController> {
               _buildInputContainer(child: const Input(placeholder: "请输入内容")),
               const DetailTitleWidget(title: '带有清除icon'),
               _buildInputContainer(
-                  child: const Input(
-                placeholder: "请输入内容",
-                clear: true,
-              )),
+                child: const Input(placeholder: "带有清除icon", clear: true),
+              ),
               const DetailTitleWidget(title: '可以自动聚焦'),
               _buildInputContainer(
                 child: const Input(placeholder: "将会自动聚焦", autofocus: true),
