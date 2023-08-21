@@ -5,6 +5,7 @@ import 'package:flutter_face/pages/input/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/toast/index.dart';
+import 'package:flutter_face/pages/transition/index.dart';
 import 'package:flutter_face/pages/user/index.dart';
 import 'package:get/get.dart';
 
@@ -43,6 +44,11 @@ class AppPages {
       name: AppRoutes.toastPage,
       page: () => const ToastPage(),
       binding: ToastBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.transitionPage,
+      page: () => const TransitionPage(),
+      binding: TransitionBinding(),
     ),
     GetPage(
       name: AppRoutes.popupPage,

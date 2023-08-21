@@ -1,35 +1,52 @@
 import 'package:flutter/material.dart';
 
 class SlideTransitionWidgt extends StatelessWidget {
+  final bool show;
   final Widget child;
   final AxisDirection direction;
-  final Duration duration;
+  final int duration;
 
   /// 移动特效
   /// ```
+  /// [show] 是否展示
+  /// [child] 子组件
   /// [direction] 移动方向
   /// [duration] 移动时间
   /// ``
   const SlideTransitionWidgt({
     super.key,
+    required this.show,
     required this.child,
     this.direction = AxisDirection.down,
-    this.duration = const Duration(milliseconds: 300),
+    this.duration = 500,
   });
 
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: duration,
+      duration: Duration(milliseconds: duration),
       transitionBuilder: (Widget child, Animation<double> animation) {
         return _SlideTransitionX(
           position: animation,
-          direction: direction,
+          direction: show ? direction : _leaveDirection(),
           child: child,
         );
       },
-      child: child,
+      child: show ? child : const SizedBox(),
     );
+  }
+
+  AxisDirection _leaveDirection() {
+    switch (direction) {
+      case AxisDirection.down:
+        return AxisDirection.up;
+      case AxisDirection.up:
+        return AxisDirection.down;
+      case AxisDirection.left:
+        return AxisDirection.right;
+      default:
+        return AxisDirection.left;
+    }
   }
 }
 

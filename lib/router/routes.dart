@@ -19,8 +19,11 @@ abstract class AppRoutes {
   /// 弹出层
   static const popupPage = '/popup';
 
-  /// 弹出层
+  /// 输入框
   static const inputPage = '/input';
+
+  /// 动画
+  static const transitionPage = '/transition';
 
   /// 我的
   static const userPage = '/user';
