@@ -20,6 +20,13 @@ class CheckboxPage extends GetView<CheckboxController> {
             const DetailTitleWidget(title: '基础用法', top: 20),
             const SizedBox(height: 8),
             CheckBoxWidget(data: _.state.baseList, value: const []),
+            const DetailTitleWidget(title: '上下排序'),
+            const SizedBox(height: 8),
+            CheckBoxWidget(
+              data: _.state.baseList,
+              value: const [],
+              direction: CheckBoxDirection.vertical,
+            ),
             const DetailTitleWidget(title: '全部禁用'),
             const SizedBox(height: 8),
             CheckBoxWidget(
@@ -27,7 +34,7 @@ class CheckboxPage extends GetView<CheckboxController> {
               value: const ['2'],
               disabled: true,
             ),
-            const DetailTitleWidget(title: '单个禁用'),
+            const DetailTitleWidget(title: '部分禁用'),
             const SizedBox(height: 8),
             CheckBoxWidget(data: _.state.disbaledList, value: const ['2']),
             const DetailTitleWidget(title: '自定义图标'),
