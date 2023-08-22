@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_face/config/index.dart';
 import 'package:flutter_face/styles/index.dart';
 import 'package:flutter_face/ui/appbar.dart';
+import 'package:flutter_face/utils/screen.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';
@@ -20,7 +22,8 @@ class HomePage extends GetView<HomeController> {
           appBar: const AppBarWidget(title: "首页", leading: SizedBox()),
           body: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.fromLTRB(
+                  16, 0, 16, Config.bottomAppBarHeight + Screen.bottomBar + 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -37,6 +40,11 @@ class HomePage extends GetView<HomeController> {
                   _buildTitle("反馈组件"),
                   const ListWidget(title: 'Dialog 弹出框', url: '/dialog'),
                   const ListWidget(title: 'Loading 加载', url: '/loading'),
+                  _buildTitle("展示组件"),
+                  const ListWidget(
+                    title: 'CircularProgressBar 圆形进度条',
+                    url: '/circle',
+                  ),
                 ],
               ),
             ),

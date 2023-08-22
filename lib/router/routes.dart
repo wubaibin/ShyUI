@@ -37,6 +37,9 @@ abstract class AppRoutes {
   /// 加载
   static const loadingPage = '/loading';
 
+  /// 圆形进度条
+  static const circlePage = '/circle';
+
   /// 我的
   static const userPage = '/user';
 }
