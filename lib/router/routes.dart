@@ -28,6 +28,9 @@ abstract class AppRoutes {
   /// 复选框
   static const checkboxPage = '/checkbox';
 
+  /// 单选框
+  static const radioPage = '/radio';
+
   /// 我的
   static const userPage = '/user';
 }

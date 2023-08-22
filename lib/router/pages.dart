@@ -5,6 +5,7 @@ import 'package:flutter_face/pages/icon/index.dart';
 import 'package:flutter_face/pages/input/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
+import 'package:flutter_face/pages/radio/index.dart';
 import 'package:flutter_face/pages/toast/index.dart';
 import 'package:flutter_face/pages/transition/index.dart';
 import 'package:flutter_face/pages/user/index.dart';
@@ -65,6 +66,11 @@ class AppPages {
       name: AppRoutes.checkboxPage,
       page: () => const CheckboxPage(),
       binding: CheckboxBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.radioPage,
+      page: () => const RadioPage(),
+      binding: RadioBinding(),
     ),
   ];
 }
