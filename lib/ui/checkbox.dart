@@ -32,8 +32,10 @@ class CheckBoxWidget extends StatefulWidget {
   /// [data] 复选框数组
   /// [value] 复选框初始默认值
   /// [onChanged] 返回选中的value数组
-  /// [disabled]
-  /// [iconSize]
+  /// [disabled] 复选框全部禁用
+  /// [iconSize] 复选框icon大小
+  /// [spacing] 设置水平间距
+  /// [runSpacing] 设置垂直间距
   /// [activeIcon] 复选框选中icon
   /// [activeColor] 复选框选中icon颜色
   /// [inactiveIcon] 复选框未选中icon
