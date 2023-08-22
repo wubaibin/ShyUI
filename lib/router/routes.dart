@@ -31,6 +31,9 @@ abstract class AppRoutes {
   /// 单选框
   static const radioPage = '/radio';
 
+  /// 弹出框
+  static const dialogPage = '/dialog';
+
   /// 我的
   static const userPage = '/user';
 }

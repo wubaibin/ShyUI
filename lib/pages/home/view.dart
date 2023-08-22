@@ -34,6 +34,8 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'Input 输入框', url: '/input'),
                   const ListWidget(title: 'Checkbox 复选框', url: '/checkbox'),
                   const ListWidget(title: 'Radio 单选框', url: '/radio'),
+                  _buildTitle("反馈组件"),
+                  const ListWidget(title: 'Dialog 弹出框', url: '/dialog'),
                 ],
               ),
             ),

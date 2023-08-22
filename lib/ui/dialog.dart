@@ -32,11 +32,11 @@ class $dialog {
   static void show({
     $dialogType type = $dialogType.confirm,
     bool locked = true,
-    String? title,
+    String title = "提示",
     String content = '',
-    String? confirmText,
+    String confirmText = "确认",
     Color confirmColor = AppColor.themeColor,
-    String? cancelText,
+    String cancelText = "取消",
     Color cancelColor = AppColor.primaryText,
     double borderRadius = 12,
     ValueChanged<$dialogSuccess>? success,
@@ -66,11 +66,11 @@ class $dialog {
           child: _buildContainer(
             type: type,
             width: width ?? Get.width * 0.82,
-            title: title ?? '提示'.tr,
+            title: title,
             content: content,
-            confirmText: confirmText ?? '确认'.tr,
+            confirmText: confirmText,
             confirmColor: confirmColor,
-            cancelText: cancelText ?? '取消'.tr,
+            cancelText: cancelText,
             cancelColor: cancelColor,
             borderRadius: borderRadius,
             child: child,
@@ -166,7 +166,7 @@ class $dialog {
   static Widget _buildContent({required String content}) {
     return content != ''
         ? Container(
-            padding: const EdgeInsets.fromLTRB(32, 40, 32, 52),
+            padding: const EdgeInsets.fromLTRB(32, 25, 32, 32),
             child: Text(
               content,
               style: const TextStyle(
