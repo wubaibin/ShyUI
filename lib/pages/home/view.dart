@@ -32,6 +32,7 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'Transition 动画', url: '/transition'),
                   _buildTitle("表单组件"),
                   const ListWidget(title: 'Input 输入框', url: '/input'),
+                  const ListWidget(title: 'Checkbox 复选框', url: '/checkbox'),
                 ],
               ),
             ),

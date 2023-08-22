@@ -25,6 +25,9 @@ abstract class AppRoutes {
   /// 动画
   static const transitionPage = '/transition';
 
+  /// 复选框
+  static const checkboxPage = '/checkbox';
+
   /// 我的
   static const userPage = '/user';
 }

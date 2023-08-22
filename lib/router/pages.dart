@@ -1,4 +1,5 @@
 import 'package:flutter_face/pages/button/index.dart';
+import 'package:flutter_face/pages/checkbox/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
 import 'package:flutter_face/pages/input/index.dart';
@@ -59,6 +60,11 @@ class AppPages {
       name: AppRoutes.inputPage,
       page: () => const InputPage(),
       binding: InputBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.checkboxPage,
+      page: () => const CheckboxPage(),
+      binding: CheckboxBinding(),
     ),
   ];
 }
