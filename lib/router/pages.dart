@@ -4,6 +4,7 @@ import 'package:flutter_face/pages/dialog/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
 import 'package:flutter_face/pages/input/index.dart';
+import 'package:flutter_face/pages/loading/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/radio/index.dart';
@@ -77,6 +78,11 @@ class AppPages {
       name: AppRoutes.dialogPage,
       page: () => const DialogPage(),
       binding: DialogBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.loadingPage,
+      page: () => const LoadingPage(),
+      binding: LoadingBinding(),
     ),
   ];
 }

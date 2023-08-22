@@ -34,6 +34,9 @@ abstract class AppRoutes {
   /// 弹出框
   static const dialogPage = '/dialog';
 
+  /// 加载
+  static const loadingPage = '/loading';
+
   /// 我的
   static const userPage = '/user';
 }
