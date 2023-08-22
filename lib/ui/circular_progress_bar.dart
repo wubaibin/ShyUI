@@ -18,12 +18,15 @@ class CircularProgressBar extends StatefulWidget {
   /// 圆形进度条
   /// ```
   /// [progress] 范围从 0 到 100
-  /// [size] 圆形进度条大小
+  /// [size] 进度条大小
   /// [backgroundColor] 背景颜色
   /// [progressColor] 进度颜色
+  /// [gradientColors] 渐变色
   /// [strokeWidth] 线条宽度
   /// [duration] 动画时间
   /// [clockwise] 是否是顺时针
+  /// [text] 文案
+  /// [textStyle] 自定义文案样式
   /// ```
   const CircularProgressBar({
     super.key,
