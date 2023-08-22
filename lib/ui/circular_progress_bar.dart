@@ -57,7 +57,7 @@ class _CircularProgressBarState extends State<CircularProgressBar>
     );
     _progressAnimation = Tween<double>(
       begin: 0.0,
-      end: widget.progress,
+      end: widget.progress / 100,
     ).animate(_animationController);
     _animationController.forward();
   }

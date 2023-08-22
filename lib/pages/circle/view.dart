@@ -19,7 +19,7 @@ class CirclePage extends GetView<CircleController> {
           children: [
             DetailTitleWidget(title: '基础用法', top: 20),
             SizedBox(height: 8),
-            CircularProgressBar(progress: 0.7, text: "70%"),
+            CircularProgressBar(progress: 70, text: "70%"),
             DetailTitleWidget(title: '样式定制'),
             SizedBox(height: 8),
             Row(
