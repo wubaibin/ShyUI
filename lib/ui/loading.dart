@@ -5,6 +5,11 @@ class LoadingWidget extends StatefulWidget {
   final double size;
   final Color color;
 
+  /// 加载中
+  /// ```
+  /// [size] 大小
+  /// [color] 颜色
+  /// ```
   const LoadingWidget({
     Key? key,
     this.size = 50,
