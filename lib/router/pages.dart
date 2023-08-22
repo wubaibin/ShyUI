@@ -2,6 +2,7 @@ import 'package:flutter_face/pages/button/index.dart';
 import 'package:flutter_face/pages/checkbox/index.dart';
 import 'package:flutter_face/pages/circle/index.dart';
 import 'package:flutter_face/pages/dialog/index.dart';
+import 'package:flutter_face/pages/empty/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
 import 'package:flutter_face/pages/input/index.dart';
@@ -89,6 +90,11 @@ class AppPages {
       name: AppRoutes.circlePage,
       page: () => const CirclePage(),
       binding: CircleBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.emptyPage,
+      page: () => const EmptyPage(),
+      binding: EmptyBinding(),
     ),
   ];
 }

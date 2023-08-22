@@ -4,26 +4,36 @@ import 'package:flutter_face/styles/index.dart';
 
 class EmptyWidget extends StatelessWidget {
   final String url;
-  final String title;
   final double top;
-  final double scale;
+  final String title;
   final TextStyle titleStyle;
+  final double width;
+  final double height;
+
+  /// 空状态
+  /// ```
+  /// [url] 空状态图片路由
+  /// [top] 距离上方距离
+  /// [title] 文案
+  /// [titleStyle] 自定义文案样式
+  /// [width] 空状态图片宽度
+  /// [height] 空状态图片高度
+  /// ```
   const EmptyWidget({
     super.key,
     this.url = ImagesUrl.emptyNoData,
     this.top = 0,
     this.title = "暂无数据",
-    this.scale = 1,
     this.titleStyle = const TextStyle(
       fontSize: 14,
       color: AppColor.threearyText,
     ),
+    this.width = 120,
+    this.height = 120,
   });
 
   @override
   Widget build(BuildContext context) {
-    double width = 120.0 * scale;
-    double height = 100 * scale;
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
