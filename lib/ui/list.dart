@@ -85,7 +85,7 @@ class ListContainerWidget extends StatelessWidget {
     this.iconWidget,
     this.padding = const EdgeInsets.symmetric(horizontal: 16),
     this.margin = const EdgeInsets.only(),
-    this.borderRadius = const BorderRadius.all(Radius.circular(0)),
+    this.borderRadius = BorderRadius.zero,
     this.bgColor = Colors.white,
     this.gradient,
     this.activeOpacity = 0.2,
