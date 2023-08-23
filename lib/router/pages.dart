@@ -10,6 +10,7 @@ import 'package:flutter_face/pages/loading/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/radio/index.dart';
+import 'package:flutter_face/pages/textarea/index.dart';
 import 'package:flutter_face/pages/toast/index.dart';
 import 'package:flutter_face/pages/transition/index.dart';
 import 'package:flutter_face/pages/user/index.dart';
@@ -65,6 +66,11 @@ class AppPages {
       name: AppRoutes.inputPage,
       page: () => const InputPage(),
       binding: InputBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.textareaPage,
+      page: () => const TextareaPage(),
+      binding: TextareaBinding(),
     ),
     GetPage(
       name: AppRoutes.checkboxPage,

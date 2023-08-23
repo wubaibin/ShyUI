@@ -22,6 +22,9 @@ abstract class AppRoutes {
   /// 输入框
   static const inputPage = '/input';
 
+  /// 多行输入框
+  static const textareaPage = '/textarea';
+
   /// 动画
   static const transitionPage = '/transition';
 

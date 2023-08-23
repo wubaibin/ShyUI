@@ -5,6 +5,7 @@ class Textarea extends StatefulWidget {
   final String value;
   final String placeholder;
   final bool disabled;
+  final bool showCounter;
   final int? maxLength;
   final int? maxLines;
   final bool autofocus;
@@ -20,6 +21,7 @@ class Textarea extends StatefulWidget {
   /// [value] 输入框的内容
   /// [placeholder] 输入框为空时占位符
   /// [disabled] 是否禁用
+  /// [showCounter] 是否展示下方的数字
   /// [maxlength] 最大输入长度
   /// [maxLines] 输入框的最大行数
   /// [autofocus] 自动聚焦，拉起键盘
@@ -34,6 +36,7 @@ class Textarea extends StatefulWidget {
     this.value = "",
     this.placeholder = '请详细描述您需要备注的内容',
     this.disabled = false,
+    this.showCounter = true,
     this.maxLength = 50,
     this.maxLines = 4,
     this.autofocus = false,
@@ -111,6 +114,7 @@ class _TextareaState extends State<Textarea> {
       decoration: InputDecoration(
         border: InputBorder.none,
         hintText: widget.placeholder,
+        counterText: widget.showCounter ? null : "",
         contentPadding: EdgeInsets.zero,
         counterStyle: widget.counterStyle,
         hintStyle: widget.placeholderStyle,
