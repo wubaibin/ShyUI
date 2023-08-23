@@ -13,6 +13,7 @@ import 'package:flutter_face/pages/loading/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/radio/index.dart';
+import 'package:flutter_face/pages/tab_bar/index.dart';
 import 'package:flutter_face/pages/textarea/index.dart';
 import 'package:flutter_face/pages/toast/index.dart';
 import 'package:flutter_face/pages/transition/index.dart';
@@ -119,6 +120,11 @@ class AppPages {
       name: AppRoutes.appBarPage,
       page: () => const AppBarPage(),
       binding: AppBarBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.tabBarPage,
+      page: () => const TabBarPage(),
+      binding: TabBarBinding(),
     ),
   ];
 }

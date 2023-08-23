@@ -8,7 +8,7 @@ class TabBarWidget extends StatelessWidget {
   final TabController controller;
   final ValueChanged<int>? onTap;
   final bool isScrollable;
-  final TabIndicator indicator;
+  final Decoration indicator;
   final Color labelColor;
   final Color unselectedLabelColor;
   final TextStyle labelStyle;
