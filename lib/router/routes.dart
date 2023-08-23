@@ -46,6 +46,9 @@ abstract class AppRoutes {
   /// 列表
   static const listPage = '/list';
 
+  /// 列表
+  static const dashedPage = '/dashed';
+
   /// 空状态
   static const emptyPage = '/empty';
 

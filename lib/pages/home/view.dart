@@ -47,6 +47,7 @@ class HomePage extends GetView<HomeController> {
                     url: '/circle',
                   ),
                   const ListWidget(title: 'List 列表', url: '/list'),
+                  const ListWidget(title: 'Dashed 虚线和虚线容器', url: '/dashed'),
                   const ListWidget(title: 'Empty 空状态', url: '/empty'),
                 ],
               ),
