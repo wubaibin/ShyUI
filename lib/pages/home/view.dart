@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_face/config/index.dart';
 import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/appbar.dart';
+import 'package:flutter_face/ui/app_bar.dart';
 import 'package:flutter_face/utils/screen.dart';
 import 'package:get/get.dart';
 
@@ -49,6 +49,8 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'List 列表', url: '/list'),
                   const ListWidget(title: 'Dashed 虚线和虚线容器', url: '/dashed'),
                   const ListWidget(title: 'Empty 空状态', url: '/empty'),
+                  _buildTitle("导航组件"),
+                  const ListWidget(title: 'AppBar 导航栏', url: '/appbar'),
                 ],
               ),
             ),

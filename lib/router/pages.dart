@@ -1,3 +1,4 @@
+import 'package:flutter_face/pages/app_bar/index.dart';
 import 'package:flutter_face/pages/button/index.dart';
 import 'package:flutter_face/pages/checkbox/index.dart';
 import 'package:flutter_face/pages/circle/index.dart';
@@ -113,6 +114,11 @@ class AppPages {
       name: AppRoutes.emptyPage,
       page: () => const EmptyPage(),
       binding: EmptyBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.appBarPage,
+      page: () => const AppBarPage(),
+      binding: AppBarBinding(),
     ),
   ];
 }
