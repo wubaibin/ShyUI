@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_face/ui/icon/index.dart';
+import 'package:flutter_face/utils/screen.dart';
 import 'package:get/get.dart';
 
 /// 消息提示框
@@ -46,7 +47,7 @@ class $toast {
             ? GestureDetector(
                 onTap: () => maskClose ? hideToast() : {},
                 child: Container(
-                  width: Get.width,
+                  width: Screen.width,
                   padding: const EdgeInsets.all(15),
                   alignment: Alignment.center,
                   decoration: const BoxDecoration(color: Colors.transparent),
@@ -54,7 +55,7 @@ class $toast {
                 ),
               )
             : Container(
-                width: Get.width,
+                width: Screen.width,
                 padding: const EdgeInsets.all(15),
                 alignment: Alignment.center,
                 child: _buildToastContainer(title: title, icon: icon),
@@ -93,7 +94,7 @@ class $toast {
                   }
                 },
                 child: Container(
-                  width: Get.width,
+                  width: Screen.width,
                   padding: const EdgeInsets.all(15),
                   alignment: Alignment.center,
                   decoration: const BoxDecoration(color: Colors.transparent),
@@ -101,7 +102,7 @@ class $toast {
                 ),
               )
             : Container(
-                width: Get.width,
+                width: Screen.width,
                 padding: const EdgeInsets.all(15),
                 alignment: Alignment.center,
                 child: _buildSizeContainer(title: title, loading: true),

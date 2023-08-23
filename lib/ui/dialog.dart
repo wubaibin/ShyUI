@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_face/styles/color.dart';
 import 'package:flutter_face/ui/touchable_highlight.dart';
+import 'package:flutter_face/utils/screen.dart';
 import 'package:get/get.dart';
 
 enum $dialogType { alert, confirm }
@@ -65,7 +66,7 @@ class $dialog {
           },
           child: _buildContainer(
             type: type,
-            width: width ?? Get.width * 0.82,
+            width: width ?? Screen.width * 0.82,
             title: title,
             content: content,
             confirmText: confirmText,
@@ -98,8 +99,8 @@ class $dialog {
     ValueChanged<String>? beforeColse,
   }) {
     return Container(
-      width: Get.width,
-      height: Get.height,
+      width: Screen.width,
+      height: Screen.height,
       color: AppColor.maskBgColor,
       child: Center(
         child: GestureDetector(
