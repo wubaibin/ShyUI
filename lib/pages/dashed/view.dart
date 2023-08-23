@@ -47,12 +47,7 @@ class DashedPage extends GetView<DashedController> {
                   children: [
                     DetailTitleWidget(title: '基础用法'),
                     SizedBox(height: 12),
-                    DashedContainer(
-                      child: SizedBox(
-                        width: 50,
-                        height: 50,
-                      ),
-                    ),
+                    DashedContainer(child: SizedBox(width: 50, height: 50)),
                   ],
                 ),
                 const Column(
@@ -61,10 +56,7 @@ class DashedPage extends GetView<DashedController> {
                     SizedBox(height: 12),
                     DashedContainer(
                       color: AppColor.themeColor,
-                      child: SizedBox(
-                        width: 50,
-                        height: 50,
-                      ),
+                      child: SizedBox(width: 50, height: 50),
                     ),
                   ],
                 ),
@@ -74,10 +66,7 @@ class DashedPage extends GetView<DashedController> {
                     const SizedBox(height: 12),
                     DashedContainer(
                       borderRadius: BorderRadius.circular(12),
-                      child: const SizedBox(
-                        width: 50,
-                        height: 50,
-                      ),
+                      child: const SizedBox(width: 50, height: 50),
                     ),
                   ],
                 ),

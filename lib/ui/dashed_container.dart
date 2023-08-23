@@ -13,10 +13,12 @@ class DashedContainer extends StatelessWidget {
 
   /// 虚线容器
   /// ```
+  /// [child] 子组件
   /// [strokeWidth] 虚线的边框宽度
   /// [color] 虚线的颜色
   /// [dashWidth] 虚线中每个实线段的长度
   /// [dashSpace] 虚线中实线和空白之间的间隔
+  /// [borderRadius] 圆角
   /// ```
   const DashedContainer({
     super.key,
