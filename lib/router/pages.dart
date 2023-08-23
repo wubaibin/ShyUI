@@ -6,6 +6,7 @@ import 'package:flutter_face/pages/empty/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
 import 'package:flutter_face/pages/input/index.dart';
+import 'package:flutter_face/pages/list/index.dart';
 import 'package:flutter_face/pages/loading/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
@@ -96,6 +97,11 @@ class AppPages {
       name: AppRoutes.circlePage,
       page: () => const CirclePage(),
       binding: CircleBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.listPage,
+      page: () => const ListPage(),
+      binding: ListBinding(),
     ),
     GetPage(
       name: AppRoutes.emptyPage,

@@ -27,6 +27,7 @@ class ListContainerWidget extends StatelessWidget {
   final double arrowSize;
   final Color arrowColor;
   final String? tagContent;
+  final EdgeInsets tagContentPadding;
   final TextStyle tagContentStyle;
   final int? count;
   final int maxCount;
@@ -59,6 +60,7 @@ class ListContainerWidget extends StatelessWidget {
   /// [arrowSize] 列表右边箭头大小
   /// [arrowColor] 列表右边箭头颜色
   /// [tagContent] 列表右边提示内容
+  /// [tagContentPadding] 列表右边提示内容Padding
   /// [tagContentStyle] 列表右边提示内容自定义样式
   /// [count] 列表右边显示带徽标数值
   /// [maxCount] 列表右边显示带徽标数值的最大值
@@ -71,7 +73,7 @@ class ListContainerWidget extends StatelessWidget {
     super.key,
     this.width = double.infinity,
     this.height = 44,
-    required this.title,
+    this.title = "",
     this.titleStyle = const TextStyle(
       fontSize: 14,
       color: AppColor.primaryText,
@@ -94,6 +96,7 @@ class ListContainerWidget extends StatelessWidget {
     this.arrowSize = 16,
     this.arrowColor = AppColor.threearyText,
     this.tagContent,
+    this.tagContentPadding = const EdgeInsets.only(right: 12),
     this.tagContentStyle = const TextStyle(
       fontSize: 15,
       color: AppColor.threearyText,
@@ -163,7 +166,7 @@ class ListContainerWidget extends StatelessWidget {
                       children: [
                         if (tagContent != null)
                           Padding(
-                            padding: const EdgeInsets.only(right: 12),
+                            padding: tagContentPadding,
                             child: Text(tagContent!, style: tagContentStyle),
                           ),
                         if (count != null && count != 0) _buildDot(),

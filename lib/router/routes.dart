@@ -43,6 +43,9 @@ abstract class AppRoutes {
   /// 圆形进度条
   static const circlePage = '/circle';
 
+  /// 列表
+  static const listPage = '/list';
+
   /// 空状态
   static const emptyPage = '/empty';
 

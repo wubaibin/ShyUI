@@ -46,6 +46,7 @@ class HomePage extends GetView<HomeController> {
                     title: 'CircularProgressBar 圆形进度条',
                     url: '/circle',
                   ),
+                  const ListWidget(title: 'List 列表', url: '/list'),
                   const ListWidget(title: 'Empty 空状态', url: '/empty'),
                 ],
               ),
