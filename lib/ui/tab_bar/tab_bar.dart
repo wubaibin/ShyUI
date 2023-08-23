@@ -14,6 +14,18 @@ class TabBarWidget extends StatelessWidget {
   final TextStyle labelStyle;
   final TextStyle unselectedLabelStyle;
 
+  /// 标签页
+  /// ```
+  /// [data] 数据
+  /// [controller] 控制器
+  /// [onTap] 点击事件
+  /// [isScrollable] 是否滚动
+  /// [indicator] 当前选中选项的指示器
+  /// [labelColor] 选中颜色
+  /// [unselectedLabelColor] 未选中颜色
+  /// [labelStyle] 选中文案样式
+  /// [unselectedLabelStyle] 未选中文案样式
+  /// ```
   const TabBarWidget({
     super.key,
     required this.data,
