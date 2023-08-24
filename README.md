@@ -17,7 +17,8 @@ FlutterFace 是一个功能强大、灵活且易于使用的 Flutter UI 框架�
 ### 注意事项
 
 1、FlutterFace 是采用Getx进行状态管理和路由管理。如果不想使用Getx,也是可以使用其中的UI组件。需要自己将context剥离开。
-2、目前UI暂支持iOS和Android
+2、目前在main.dart中有多语言切换的功能，如果不需要可以删除
+3、目前UI暂支持iOS和Android
 
 ### FlutterFace 功能和特点：
 
