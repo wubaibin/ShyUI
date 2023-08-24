@@ -13,12 +13,15 @@ class $overlay {
   /// ```
   /// [name] 动画名称
   /// [duration] 动画过渡时间
+  /// [showTransition] 是否展示动画
+  /// [locked] 	遮罩层是否设定为锁定态
   /// [child] 子组件
   /// ```
   static void show({
     TransitionType name = TransitionType.slideUp,
     int duration = 500,
     bool showTransition = false,
+    bool locked = false,
     required Widget child,
   }) {
     _overlayEntry = OverlayEntry(
@@ -28,6 +31,9 @@ class $overlay {
           child: GestureDetector(
             behavior: HitTestBehavior.deferToChild,
             onTap: () {
+              if (locked) {
+                return;
+              }
               hide();
             },
             child: Container(
