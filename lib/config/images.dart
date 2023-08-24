@@ -4,4 +4,6 @@ class ImagesUrl {
 
   static const String emptyNoData = '${_fileEmpty}no_data.png';
   static const String emptyNoSearch = '${_fileEmpty}no_search.png';
+
+  static const String logo = 'assets/images/logo.png';
 }
