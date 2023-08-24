@@ -1,5 +1,5 @@
 name: flutter_face
-description: A new Flutter project.
+description: 生活就是面对微笑
 
 publish_to: "none"
 
@@ -19,10 +19,6 @@ dependencies:
   get: ^4.6.5
   # 缓存
   shared_preferences: ^2.0.18
-  # 选择图片
-  image_picker: ^0.8.7+5
-  # 权限
-  permission_handler: ^10.2.0
 
 dev_dependencies:
   flutter_test:
