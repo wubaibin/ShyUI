@@ -10,19 +10,19 @@ FlutterFace 是一个功能强大、灵活且易于使用的 Flutter UI 框架�
 
 ### 在线体验
 
-目前只有Android版本，iOS目前没有博主自己的开发者账号
+目前只有 Android 版本，iOS 博主没有自己的开发者账号
 
 ![输入图片说明](https://foruda.gitee.com/images/1692847647141588411/6953e48a_5424555.png "屏幕截图")
 
 ### 注意事项
 
-1、FlutterFace 是采用Getx进行状态管理和路由管理。如果不想使用Getx,也是可以使用其中的UI组件。需要自己将context剥离开。
+1、FlutterFace 是采用 Getx 进行状态管理和路由管理。如果不想使用 Getx,也是可以使用其中的 UI 组件。需要自己将 context 剥离开。
 
-2、目前在main.dart中有多语言切换的功能，如果不需要可以删除
+2、目前在 main.dart 中有多语言切换的功能，如果不需要可以删除
 
-3、目前UI暂支持iOS和Android
+3、目前 UI 暂支持 iOS 和 Android
 
-### FlutterFace 功能和特点：
+### FlutterFace 功能和特点
 
 预制组件库：FlutterFace 提供了大量的预制组件，包括按钮、输入框、列表、动画、导航栏等等，您可以直接使用这些组件来构建用户界面，省去了从头编写组件的麻烦。
 
@@ -32,6 +32,10 @@ FlutterFace 是一个功能强大、灵活且易于使用的 Flutter UI 框架�
 
 文档和示例：FlutterFace 提供了详细的文档和示例代码，使得开发者能够快速上手并理解如何使用框架中的各个组件和功能。这极大地降低了学习成本，并加速了开发进程。
 
-无论您是一个刚入门的初学者还是一个经验丰富的专业开发者，FlutterFace 都能成为您快速构建精美且高质量应用程序的理想选择。
-
 希望 FlutterFace 能为您的 Flutter 开发之旅提供便利和启发！
+
+### 特别鸣谢
+
+[猫哥](https://ducafecat.com) 歪脖子 许半仙及猫哥群里的学员们
+
+[whoitao](https://space.bilibili.com/1601108355)
