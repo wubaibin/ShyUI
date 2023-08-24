@@ -20,6 +20,12 @@ class OverlayPage extends GetView<OverlayController> {
             const DetailTitleWidget(title: '基础用法', top: 20),
             const SizedBox(height: 8),
             Button(title: "显示遮罩层", onPress: _.showBaseTap),
+            const DetailTitleWidget(title: '嵌入内容'),
+            const SizedBox(height: 8),
+            Button(title: "嵌入内容", onPress: _.showContentTap),
+            const DetailTitleWidget(title: '加入动画'),
+            const SizedBox(height: 8),
+            Button(title: "加入动画", onPress: _.showTransitionTap),
           ],
         );
       },
