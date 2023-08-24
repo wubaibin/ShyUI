@@ -169,6 +169,22 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
       }
     }
 
+    Widget buildIcon() {
+      return widget.activeWidget == null || widget.inactiveWidget == null
+          ? IconFont(
+              name: active ? widget.activeIcon : widget.inactiveIcon,
+              size: widget.iconSize,
+              color: disabled || widget.disabled
+                  ? widget.disabledColor
+                  : active
+                      ? widget.activeColor
+                      : widget.inactiveColor,
+            )
+          : active
+              ? widget.activeWidget!
+              : widget.inactiveWidget!;
+    }
+
     return GestureDetector(
       onTap: () {
         if (widget.labelDisabled || disabled || widget.disabled) {
@@ -180,30 +196,14 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
         color: Colors.transparent,
         child: Row(
           children: [
-            GestureDetector(
-              onTap: () {
-                if (disabled || widget.disabled) {
-                  return;
-                }
-                if (widget.labelDisabled) {
-                  setValue();
-                }
-              },
-              child: widget.activeWidget == null ||
-                      widget.inactiveWidget == null
-                  ? IconFont(
-                      name: active ? widget.activeIcon : widget.inactiveIcon,
-                      size: widget.iconSize,
-                      color: disabled || widget.disabled
-                          ? widget.disabledColor
-                          : active
-                              ? widget.activeColor
-                              : widget.inactiveColor,
-                    )
-                  : active
-                      ? widget.activeWidget
-                      : widget.inactiveWidget,
-            ),
+            widget.labelDisabled && !(disabled || widget.disabled)
+                ? GestureDetector(
+                    onTap: () {
+                      setValue();
+                    },
+                    child: buildIcon(),
+                  )
+                : buildIcon(),
             Padding(
               padding: EdgeInsets.only(left: widget.labelSpace),
               child: Text(
