@@ -19,6 +19,9 @@ abstract class AppRoutes {
   /// 弹出层
   static const popupPage = '/popup';
 
+  /// 遮罩层
+  static const overlayPage = '/overlay';
+
   /// 输入框
   static const inputPage = '/input';
 

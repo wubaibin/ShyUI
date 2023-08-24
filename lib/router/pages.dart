@@ -11,6 +11,7 @@ import 'package:flutter_face/pages/input/index.dart';
 import 'package:flutter_face/pages/list/index.dart';
 import 'package:flutter_face/pages/loading/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
+import 'package:flutter_face/pages/overlay/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/radio/index.dart';
 import 'package:flutter_face/pages/tab_bar/index.dart';
@@ -65,6 +66,11 @@ class AppPages {
       name: AppRoutes.popupPage,
       page: () => const PopupPage(),
       binding: PopupBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.overlayPage,
+      page: () => const OverlayPage(),
+      binding: OverlayBinding(),
     ),
     GetPage(
       name: AppRoutes.inputPage,

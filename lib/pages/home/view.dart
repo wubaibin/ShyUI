@@ -40,6 +40,7 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'Radio 单选框', url: '/radio'),
                   _buildTitle("反馈组件"),
                   const ListWidget(title: 'Dialog 弹出框', url: '/dialog'),
+                  const ListWidget(title: 'Overlay 遮罩层', url: '/overlay'),
                   const ListWidget(title: 'Loading 加载', url: '/loading'),
                   _buildTitle("展示组件"),
                   const ListWidget(

@@ -21,13 +21,6 @@ FlutterFace 是一个功能强大、灵活且易于使用的 Flutter UI 框架�
 ![输入图片说明](https://foruda.gitee.com/images/1692856838097407716/332666bc_5424555.png "屏幕截图")![输入图片说明](https://foruda.gitee.com/images/1692856807800303114/7c074104_5424555.png "屏幕截图")
 
 
-
-### 在线体验
-
-目前只有 Android 版本，iOS 博主没有自己的开发者账号
-
-![输入图片说明](https://foruda.gitee.com/images/1692847647141588411/6953e48a_5424555.png "屏幕截图")
-
 ### 注意事项
 
 1、FlutterFace 是采用 Getx 进行状态管理和路由管理。如果不想使用 Getx,也是可以使用其中的 UI 组件。需要自己将 context 剥离开。
