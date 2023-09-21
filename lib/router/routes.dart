@@ -40,6 +40,9 @@ abstract class AppRoutes {
   /// 弹出框
   static const dialogPage = '/dialog';
 
+  /// 下拉菜单
+  static const dropDownMenuPage = '/dropDownMenu';
+
   /// 加载
   static const loadingPage = '/loading';
 
