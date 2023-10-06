@@ -38,6 +38,7 @@ class TransitionWidget extends StatelessWidget {
   final bool show;
   final Widget child;
   final int duration;
+  final Curve curve;
 
   /// 动画
   /// ```
@@ -45,6 +46,7 @@ class TransitionWidget extends StatelessWidget {
   /// [show] 是否展示
   /// [child] 子组件
   /// [duration] 动画过渡时间
+  /// [curve] 动画过度效果
   /// ```
   const TransitionWidget({
     super.key,
@@ -52,12 +54,12 @@ class TransitionWidget extends StatelessWidget {
     required this.show,
     required this.child,
     this.duration = 1000,
+    this.curve = Curves.easeInOut,
   });
 
   @override
   Widget build(BuildContext context) {
     final opacity = show ? 1.0 : 0.0;
-    const curve = Curves.easeInOut;
 
     switch (name) {
       case TransitionType.slideUp:
