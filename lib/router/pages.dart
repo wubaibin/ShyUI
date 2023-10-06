@@ -4,6 +4,7 @@ import 'package:flutter_face/pages/checkbox/index.dart';
 import 'package:flutter_face/pages/circle/index.dart';
 import 'package:flutter_face/pages/dashed/index.dart';
 import 'package:flutter_face/pages/dialog/index.dart';
+import 'package:flutter_face/pages/drop_down_menu/index.dart';
 import 'package:flutter_face/pages/empty/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
@@ -96,6 +97,11 @@ class AppPages {
       name: AppRoutes.dialogPage,
       page: () => const DialogPage(),
       binding: DialogBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.dropDownMenuPage,
+      page: () => const DropDownMenuPage(),
+      binding: DropDownMenuBinding(),
     ),
     GetPage(
       name: AppRoutes.loadingPage,
