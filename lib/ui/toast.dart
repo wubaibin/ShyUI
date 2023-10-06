@@ -35,6 +35,7 @@ class $toast {
     int duration = 3000,
     bool mask = true,
     bool maskClose = false,
+    Function? complete,
   }) {
     if (_overlayEntry != null) {
       hideToast();
@@ -64,6 +65,9 @@ class $toast {
     });
     Navigator.of(Get.context!).overlay?.insert(_overlayEntry!);
     _time = Timer(Duration(milliseconds: duration), () {
+      if (complete != null) {
+        complete();
+      }
       hideToast();
     });
   }
