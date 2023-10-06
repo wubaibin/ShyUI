@@ -33,6 +33,21 @@ class TabBarPage extends GetView<TabBarController> {
                 controller: _.tabBaseController,
               ),
             ),
+            const DetailTitleWidget(title: '带有数量', top: 20),
+            const SizedBox(height: 8),
+            Container(
+              width: double.infinity,
+              height: 44,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: TabBarWidget(
+                isScrollable: false,
+                data: _.state.tabAccountList,
+                controller: _.tabBaseController,
+              ),
+            ),
             const DetailTitleWidget(title: '标签栏滚动'),
             const SizedBox(height: 8),
             Container(
