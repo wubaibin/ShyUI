@@ -64,13 +64,17 @@ class DropDownMenu extends StatefulWidget {
   /// [customMenuButton] 自定义下拉按钮
   /// [activeTextColor] 选中文字颜色
   /// [inacticeTextColor] 未选中文字颜色
+  /// [disabledTextColor] 禁用文字颜色
   /// [activeBgColor] 选中背景颜色
   /// [inactiveBgColor] 未选中背景颜色
+  /// [disabledBgColor] 禁用背景颜色
   /// [activeIconColor] 选中icon颜色
   /// [inactiveIconColor] 未选中icon颜色
+  /// [disabledIconColor] 禁用icon颜色
   /// [activeMenuTextColor] 选中列表文字颜色
   /// [inactiveMenuTextColor] 未选中列表文字颜色
   /// [lineColor] 横线颜色
+  /// [overlyBgColor] 蒙版颜色
   /// [locked] 点击背景是否关闭
   /// ```
   const DropDownMenu({
