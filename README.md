@@ -22,7 +22,7 @@ FlutterFace 是一个功能强大、灵活且易于使用的 Flutter UI 框架�
 
 ![输入图片说明](https://foruda.gitee.com/images/1692856838097407716/332666bc_5424555.png "屏幕截图")![输入图片说明](https://foruda.gitee.com/images/1692856807800303114/7c074104_5424555.png "屏幕截图")
 
-![输入图片说明](https://foruda.gitee.com/images/1696575047240933080/1fd0b846_5424555.jpeg "WeChat3e76493c0d7449a4f81b1d848b980123.jpg")
+![输入图片说明](https://foruda.gitee.com/images/1696577766571982041/e6605a47_5424555.jpeg "WeChata854e9d17c4c6c97a554da40e5d1c1c3.jpg")
 
 
 ### 注意事项
