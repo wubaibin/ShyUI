@@ -41,4 +41,32 @@ class DropDownMenuState {
       ],
     ),
   ];
+
+  List<DropDownMenuModel> condition2 = [
+    DropDownMenuModel(
+      title: '创建时间',
+      value: [],
+      type: DropDownMenuType.radio,
+      required: false,
+      param: 'day',
+      data: [
+        DropDownMenuItem(label: '今日', value: '1'),
+        DropDownMenuItem(label: '近三日', value: '3'),
+        DropDownMenuItem(label: '近一周', value: '7'),
+      ],
+      disabled: true,
+    ),
+    DropDownMenuModel(
+      title: '活动商品',
+      value: [],
+      type: DropDownMenuType.radio,
+      required: false,
+      param: 'product',
+      data: [
+        DropDownMenuItem(label: '全部商品', value: '1'),
+        DropDownMenuItem(label: '新款商品', value: '2'),
+        DropDownMenuItem(label: '活动商品', value: '3'),
+      ],
+    ),
+  ];
 }

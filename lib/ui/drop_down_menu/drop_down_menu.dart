@@ -32,10 +32,13 @@ class DropDownMenu extends StatefulWidget {
       customMenuButton;
   final Color activeTextColor;
   final Color inacticeTextColor;
+  final Color disabledTextColor;
   final Color? activeBgColor;
   final Color inactiveBgColor;
+  final Color disabledBgColor;
   final Color activeIconColor;
   final Color inactiveIconColor;
+  final Color disabledIconColor;
   final Color activeMenuTextColor;
   final Color inactiveMenuTextColor;
   final Color lineColor;
@@ -89,10 +92,13 @@ class DropDownMenu extends StatefulWidget {
     this.customMenuButton,
     this.activeTextColor = AppColor.themeColor,
     this.inacticeTextColor = AppColor.secondaryText,
+    this.disabledTextColor = AppColor.placeholderText,
     this.activeBgColor,
     this.inactiveBgColor = AppColor.bgColor,
+    this.disabledBgColor = AppColor.bgColor,
     this.activeIconColor = AppColor.themeColor,
     this.inactiveIconColor = AppColor.placeholderText,
+    this.disabledIconColor = AppColor.placeholderText,
     this.activeMenuTextColor = AppColor.themeColor,
     this.inactiveMenuTextColor = AppColor.primaryText,
     this.lineColor = AppColor.bgColor,
@@ -144,7 +150,7 @@ class _DropDownMenuState extends State<DropDownMenu>
 
   void dropDownItemTap({required int index, required DropDownMenuModel data}) {
     final list = data.data;
-    if (list.isEmpty) {
+    if (list.isEmpty || data.disabled) {
       return;
     }
     if (!data.isDropDown) {
@@ -262,7 +268,9 @@ class _DropDownMenuState extends State<DropDownMenu>
         borderRadius: BorderRadius.circular(4),
         color: select
             ? (widget.activeBgColor ?? AppColor.themeColor.withOpacity(0.1))
-            : widget.inactiveBgColor,
+            : data.disabled
+                ? widget.disabledBgColor
+                : widget.inactiveBgColor,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -272,8 +280,11 @@ class _DropDownMenuState extends State<DropDownMenu>
               DropDownMenuController.initTitle(data),
               style: TextStyle(
                 fontSize: 12,
-                color:
-                    select ? widget.activeTextColor : widget.inacticeTextColor,
+                color: select
+                    ? widget.activeTextColor
+                    : data.disabled
+                        ? widget.disabledTextColor
+                        : widget.inacticeTextColor,
               ),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
@@ -284,13 +295,19 @@ class _DropDownMenuState extends State<DropDownMenu>
             Padding(
               padding: const EdgeInsets.only(left: 3),
               child: Transform.rotate(
-                angle: index == _index ? pi : 0,
+                angle: widget.direction == DropDownDirection.down
+                    ? (index == _index ? pi : 0)
+                    : index == _index
+                        ? 0
+                        : pi,
                 child: IconFont(
                   name: data.icon,
                   size: 10,
                   color: select
                       ? widget.activeIconColor
-                      : widget.inactiveIconColor,
+                      : data.disabled
+                          ? widget.disabledIconColor
+                          : widget.inactiveIconColor,
                 ),
               ),
             )

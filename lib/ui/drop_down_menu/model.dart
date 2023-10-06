@@ -11,6 +11,7 @@ enum DropDownMenuType { radio, checkbox }
 /// [data] 条件
 /// [icon] icon
 /// [isDropDown] 是否展示下拉
+/// [disabled] 是否禁用
 /// ```
 class DropDownMenuModel {
   late String title;
@@ -21,6 +22,7 @@ class DropDownMenuModel {
   late List<DropDownMenuItem> data;
   late String icon;
   late bool isDropDown;
+  late bool disabled;
 
   DropDownMenuModel({
     required this.title,
@@ -31,6 +33,7 @@ class DropDownMenuModel {
     required this.data,
     this.icon = "drop_down",
     this.isDropDown = true,
+    this.disabled = false,
   });
 
   DropDownMenuModel.fromJson(Map<String, dynamic> json) {
@@ -47,6 +50,7 @@ class DropDownMenuModel {
         data.add(DropDownMenuItem.fromJson(v));
       });
     }
+    disabled = json['disabled'];
   }
 
   Map<String, dynamic> toJson() {
@@ -59,6 +63,7 @@ class DropDownMenuModel {
     data['icon'] = icon;
     data['isDropDown'] = isDropDown;
     data['data'] = this.data.map((v) => v.toJson()).toList();
+    data['disabled'] = disabled;
     return data;
   }
 
