@@ -28,6 +28,7 @@ class $toast {
   /// [duration] 提示的延迟时间(毫秒)
   /// [mask] 是否显示透明蒙层，防止触摸穿透
   /// [maskClose] 是否点击透明蒙层关闭 当mask为false,maskClose失效
+  /// [complete] 调用结束的回调函数
   /// ```
   static void showToast({
     required String title,
