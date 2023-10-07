@@ -52,6 +52,7 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'List 列表', url: '/list'),
                   const ListWidget(title: 'Dashed 虚线和虚线容器', url: '/dashed'),
                   const ListWidget(title: 'Empty 空状态', url: '/empty'),
+                  const ListWidget(title: 'NoticeBar 通知栏', url: '/noticeBar'),
                   _buildTitle("导航组件"),
                   const ListWidget(title: 'AppBar 导航栏', url: '/appbar'),
                   const ListWidget(title: 'TabBar 标签页', url: '/tabbar'),

@@ -58,6 +58,9 @@ abstract class AppRoutes {
   /// 空状态
   static const emptyPage = '/empty';
 
+  /// 通知栏
+  static const noticeBarPage = '/noticeBar';
+
   /// 导航栏
   static const appBarPage = '/appbar';
 

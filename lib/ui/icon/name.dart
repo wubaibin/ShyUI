@@ -11,4 +11,7 @@ final Map<String, IconData> iconName = {
   'checkbox_inactive': const IconData(0xe6ed, fontFamily: 'IconFont'),
   'drop_down': const IconData(0xe62a, fontFamily: 'IconFont'),
   'filter': const IconData(0xe635, fontFamily: 'IconFont'),
+  'ic_lookingforcar': const IconData(0xe717, fontFamily: 'IconFont'),
+  'ic_circle_right': const IconData(0xe6dd, fontFamily: 'IconFont'),
+  'ic_help': const IconData(0xe6dc, fontFamily: 'IconFont'),
 };

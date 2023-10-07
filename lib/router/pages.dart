@@ -12,6 +12,7 @@ import 'package:flutter_face/pages/input/index.dart';
 import 'package:flutter_face/pages/list/index.dart';
 import 'package:flutter_face/pages/loading/index.dart';
 import 'package:flutter_face/pages/main/index.dart';
+import 'package:flutter_face/pages/notice_bar/index.dart';
 import 'package:flutter_face/pages/overlay/index.dart';
 import 'package:flutter_face/pages/popup/index.dart';
 import 'package:flutter_face/pages/radio/index.dart';
@@ -127,6 +128,11 @@ class AppPages {
       name: AppRoutes.emptyPage,
       page: () => const EmptyPage(),
       binding: EmptyBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.noticeBarPage,
+      page: () => const NoticeBarPage(),
+      binding: NoticeBarBinding(),
     ),
     GetPage(
       name: AppRoutes.appBarPage,

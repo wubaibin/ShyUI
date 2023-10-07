@@ -22,7 +22,7 @@ class IconFont extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (name == '') {
+    if (name.isEmpty) {
       throw ArgumentError('name不能为空');
     }
     return Icon(
