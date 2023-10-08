@@ -14,6 +14,10 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>zh_CN</string>
+	</array>
 	<key>CFBundleName</key>
 	<string>flutter_face</string>
 	<key>CFBundlePackageType</key>
@@ -26,6 +30,12 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>为了您可以上传图片，请允许使用相机</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>为了您可以上传图片，请允许使用相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>为了您可以上传图片，请允许从照片中选择图像</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

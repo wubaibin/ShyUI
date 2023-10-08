@@ -14,4 +14,5 @@ final Map<String, IconData> iconName = {
   'ic_lookingforcar': const IconData(0xe717, fontFamily: 'IconFont'),
   'ic_circle_right': const IconData(0xe6dd, fontFamily: 'IconFont'),
   'ic_help': const IconData(0xe6dc, fontFamily: 'IconFont'),
+  'photo': const IconData(0xe7ef, fontFamily: 'IconFont'),
 };

@@ -38,6 +38,8 @@ class HomePage extends GetView<HomeController> {
                   const ListWidget(title: 'Textarea 多行输入框', url: '/textarea'),
                   const ListWidget(title: 'Checkbox 复选框', url: '/checkbox'),
                   const ListWidget(title: 'Radio 单选框', url: '/radio'),
+                  const ListWidget(
+                      title: 'ImagePicker 图片选择器', url: '/imagePicker'),
                   _buildTitle("反馈组件"),
                   const ListWidget(title: 'Dialog 弹出框', url: '/dialog'),
                   const ListWidget(

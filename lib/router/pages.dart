@@ -8,6 +8,7 @@ import 'package:flutter_face/pages/drop_down_menu/index.dart';
 import 'package:flutter_face/pages/empty/index.dart';
 import 'package:flutter_face/pages/home/index.dart';
 import 'package:flutter_face/pages/icon/index.dart';
+import 'package:flutter_face/pages/image_picker/index.dart';
 import 'package:flutter_face/pages/input/index.dart';
 import 'package:flutter_face/pages/list/index.dart';
 import 'package:flutter_face/pages/loading/index.dart';
@@ -93,6 +94,11 @@ class AppPages {
       name: AppRoutes.radioPage,
       page: () => const RadioPage(),
       binding: RadioBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.imagePickerPage,
+      page: () => const ImagePickerPage(),
+      binding: ImagePickerBinding(),
     ),
     GetPage(
       name: AppRoutes.dialogPage,

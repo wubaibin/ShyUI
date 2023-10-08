@@ -37,6 +37,9 @@ abstract class AppRoutes {
   /// 单选框
   static const radioPage = '/radio';
 
+  /// 图片选择器
+  static const imagePickerPage = '/imagePicker';
+
   /// 弹出框
   static const dialogPage = '/dialog';
 
