@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 
 enum $dialogType { alert, confirm }
 
+enum $dialogBeforeColse { background, confirm, cancel }
+
 /// 模态框
 /// ```
 /// [show] 展示
@@ -41,7 +43,7 @@ class $dialog {
     Color cancelColor = AppColor.primaryText,
     double borderRadius = 12,
     ValueChanged<$dialogSuccess>? success,
-    ValueChanged<String>? beforeColse,
+    ValueChanged<$dialogBeforeColse>? beforeColse,
     Widget? child,
     double? width,
   }) {
@@ -59,7 +61,7 @@ class $dialog {
               return;
             }
             if (beforeColse != null) {
-              beforeColse('background');
+              beforeColse($dialogBeforeColse.background);
               return;
             }
             hide();
@@ -96,7 +98,7 @@ class $dialog {
     required double borderRadius,
     Widget? child,
     ValueChanged<$dialogSuccess>? success,
-    ValueChanged<String>? beforeColse,
+    ValueChanged<$dialogBeforeColse>? beforeColse,
   }) {
     return Container(
       width: Screen.width,
@@ -189,7 +191,7 @@ class $dialog {
     required Color color,
     required double borderRadius,
     ValueChanged<$dialogSuccess>? success,
-    ValueChanged<String>? beforeColse,
+    ValueChanged<$dialogBeforeColse>? beforeColse,
   }) {
     return TouchableHighlight(
       width: width,
@@ -202,7 +204,9 @@ class $dialog {
           }));
         }
         if (beforeColse != null) {
-          beforeColse(type);
+          beforeColse(type == 'confirm'
+              ? $dialogBeforeColse.confirm
+              : $dialogBeforeColse.cancel);
           return;
         }
         hide();
