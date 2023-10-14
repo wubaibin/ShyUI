@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/components/detail_title.dart';
-import 'package:flutter_face/ui/app_bar.dart';
-import 'package:flutter_face/ui/drop_down_menu/index.dart';
+import 'package:shy_ui/components/detail_title.dart';
+import 'package:shy_ui/ui/app_bar.dart';
+import 'package:shy_ui/ui/drop_down_menu/index.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';

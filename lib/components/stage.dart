@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/ui/app_bar.dart';
+import 'package:shy_ui/ui/app_bar.dart';
 
 class StageWidget extends StatelessWidget {
   final String title;

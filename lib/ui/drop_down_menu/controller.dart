@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/ui/drop_down_menu/index.dart';
-import 'package:flutter_face/ui/navigator_route.dart';
-import 'package:flutter_face/utils/screen.dart';
+import 'package:shy_ui/ui/drop_down_menu/index.dart';
+import 'package:shy_ui/ui/navigator_route.dart';
+import 'package:shy_ui/utils/screen.dart';
 import 'package:get/get.dart';
 
 class DropDownMenuController {

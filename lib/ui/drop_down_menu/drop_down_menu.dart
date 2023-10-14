@@ -2,12 +2,12 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/drop_down_menu/controller.dart';
-import 'package:flutter_face/ui/drop_down_menu/menu.dart';
-import 'package:flutter_face/ui/drop_down_menu/model.dart';
-import 'package:flutter_face/ui/icon/index.dart';
-import 'package:flutter_face/utils/screen.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/drop_down_menu/controller.dart';
+import 'package:shy_ui/ui/drop_down_menu/menu.dart';
+import 'package:shy_ui/ui/drop_down_menu/model.dart';
+import 'package:shy_ui/ui/icon/index.dart';
+import 'package:shy_ui/utils/screen.dart';
 
 enum DropDownDirection { up, down }
 

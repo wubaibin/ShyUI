@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/config/index.dart';
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/app_bar.dart';
-import 'package:flutter_face/utils/screen.dart';
+import 'package:shy_ui/config/index.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/app_bar.dart';
+import 'package:shy_ui/utils/screen.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';

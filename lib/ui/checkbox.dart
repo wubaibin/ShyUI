@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/icon/index.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/icon/index.dart';
 
 enum CheckBoxDirection { horizontal, vertical }
 

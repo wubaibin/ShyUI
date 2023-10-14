@@ -1,4 +1,4 @@
-import 'package:flutter_face/ui/image_picker/model.dart';
+import 'package:shy_ui/ui/image_picker/model.dart';
 
 class ImagePickerState {
   List<ImagePickerItem> previewList = [

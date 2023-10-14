@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/styles/index.dart';
+import 'package:shy_ui/styles/index.dart';
 import 'name.dart';
 
 class IconFont extends StatelessWidget {

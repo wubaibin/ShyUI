@@ -1,4 +1,4 @@
-import 'package:flutter_face/ui/checkbox.dart';
+import 'package:shy_ui/ui/checkbox.dart';
 
 class CheckboxState {
   List<CheckboxModel> baseList = [

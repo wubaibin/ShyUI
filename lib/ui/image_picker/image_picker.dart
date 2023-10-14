@@ -3,10 +3,10 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/icon/index.dart';
-import 'package:flutter_face/ui/image_picker/preview_image.dart';
-import 'package:flutter_face/ui/toast.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/icon/index.dart';
+import 'package:shy_ui/ui/image_picker/preview_image.dart';
+import 'package:shy_ui/ui/toast.dart';
 import './choose_image.dart';
 import 'index.dart';
 

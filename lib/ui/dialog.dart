@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/styles/color.dart';
-import 'package:flutter_face/ui/touchable_highlight.dart';
-import 'package:flutter_face/utils/screen.dart';
+import 'package:shy_ui/styles/color.dart';
+import 'package:shy_ui/ui/touchable_highlight.dart';
+import 'package:shy_ui/utils/screen.dart';
 import 'package:get/get.dart';
 
 enum $dialogType { alert, confirm }

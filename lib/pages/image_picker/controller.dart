@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter_face/ui/dialog.dart';
+import 'package:shy_ui/ui/dialog.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';

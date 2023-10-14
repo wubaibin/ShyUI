@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/ui/transition/fade_transition.dart';
-import 'package:flutter_face/ui/transition/slide_transition.dart';
+import 'package:shy_ui/ui/transition/fade_transition.dart';
+import 'package:shy_ui/ui/transition/slide_transition.dart';
 
 enum TransitionType {
   /// 淡入

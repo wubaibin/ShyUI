@@ -1,5 +1,5 @@
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/tab_bar/index.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/tab_bar/index.dart';
 import 'package:flutter/material.dart';
 
 class TabBarWidget extends StatelessWidget {

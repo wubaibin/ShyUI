@@ -1,4 +1,4 @@
-import 'package:flutter_face/ui/tab_bar/index.dart';
+import 'package:shy_ui/ui/tab_bar/index.dart';
 
 class TabBarState {
   List<TabBarModel> tabBaseList = [

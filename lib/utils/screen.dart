@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_face/config/index.dart';
+import 'package:shy_ui/config/index.dart';
 
 enum SafeAreaType { top, right, bottom, left }
 

@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_face/ui/image_picker/index.dart';
-import 'package:flutter_face/utils/screen.dart';
+import 'package:shy_ui/ui/image_picker/index.dart';
+import 'package:shy_ui/utils/screen.dart';
 import 'package:get/get.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';

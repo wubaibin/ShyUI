@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/components/detail_title.dart';
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/app_bar.dart';
-import 'package:flutter_face/ui/notice_bar.dart';
-import 'package:flutter_face/ui/toast.dart';
+import 'package:shy_ui/components/detail_title.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/app_bar.dart';
+import 'package:shy_ui/ui/notice_bar.dart';
+import 'package:shy_ui/ui/toast.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';

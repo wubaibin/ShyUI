@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/components/detail_title.dart';
-import 'package:flutter_face/components/stage.dart';
-import 'package:flutter_face/styles/index.dart';
-import 'package:flutter_face/ui/dashed_container.dart';
-import 'package:flutter_face/ui/dashed_line.dart';
+import 'package:shy_ui/components/detail_title.dart';
+import 'package:shy_ui/components/stage.dart';
+import 'package:shy_ui/styles/index.dart';
+import 'package:shy_ui/ui/dashed_container.dart';
+import 'package:shy_ui/ui/dashed_line.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';

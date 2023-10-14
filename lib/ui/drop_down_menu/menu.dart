@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_face/ui/button.dart';
-import 'package:flutter_face/ui/drop_down_menu/index.dart';
-import 'package:flutter_face/ui/icon/index.dart';
+import 'package:shy_ui/ui/button.dart';
+import 'package:shy_ui/ui/drop_down_menu/index.dart';
+import 'package:shy_ui/ui/icon/index.dart';
 
 class MenuWidget extends StatefulWidget {
   final DropDownMenuModel data;

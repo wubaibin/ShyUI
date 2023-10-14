@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_face/ui/button.dart';
-import 'package:flutter_face/ui/dialog.dart';
-import 'package:flutter_face/ui/popup.dart';
-import 'package:flutter_face/utils/common.dart';
-import 'package:flutter_face/utils/screen.dart';
+import 'package:shy_ui/ui/button.dart';
+import 'package:shy_ui/ui/dialog.dart';
+import 'package:shy_ui/ui/popup.dart';
+import 'package:shy_ui/utils/common.dart';
+import 'package:shy_ui/utils/screen.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 

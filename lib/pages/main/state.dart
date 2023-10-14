@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/models/navigation_item.dart';
-import 'package:flutter_face/pages/home/index.dart';
-import 'package:flutter_face/pages/user/index.dart';
+import 'package:shy_ui/models/navigation_item.dart';
+import 'package:shy_ui/pages/home/index.dart';
+import 'package:shy_ui/pages/user/index.dart';
 
 class MainState {
   // 页面下标

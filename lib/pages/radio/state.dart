@@ -1,4 +1,4 @@
-import 'package:flutter_face/ui/radio.dart';
+import 'package:shy_ui/ui/radio.dart';
 
 class RadioState {
   List<RadioModel> baseList = [

@@ -1,4 +1,4 @@
-import 'package:flutter_face/ui/drop_down_menu/index.dart';
+import 'package:shy_ui/ui/drop_down_menu/index.dart';
 
 class DropDownMenuState {
   List<DropDownMenuModel> condition = [

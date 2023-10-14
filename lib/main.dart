@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_face/lang/index.dart';
-import 'package:flutter_face/router/pages.dart';
-import 'package:flutter_face/styles/theme.dart';
+import 'package:shy_ui/lang/index.dart';
+import 'package:shy_ui/router/pages.dart';
+import 'package:shy_ui/styles/theme.dart';
 import 'dart:ui' as ui;
 
 void main() {

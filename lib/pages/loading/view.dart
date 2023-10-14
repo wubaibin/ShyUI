@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face/components/detail_title.dart';
-import 'package:flutter_face/components/stage.dart';
-import 'package:flutter_face/ui/loading.dart';
+import 'package:shy_ui/components/detail_title.dart';
+import 'package:shy_ui/components/stage.dart';
+import 'package:shy_ui/ui/loading.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';

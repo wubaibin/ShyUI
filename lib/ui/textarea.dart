@@ -1,4 +1,4 @@
-import 'package:flutter_face/styles/color.dart';
+import 'package:shy_ui/styles/color.dart';
 import 'package:flutter/material.dart';
 
 class Textarea extends StatefulWidget {
