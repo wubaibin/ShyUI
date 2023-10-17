@@ -26,7 +26,7 @@ class UserPage extends GetView<UserController> {
                 const Padding(
                   padding: EdgeInsets.only(top: 12, bottom: 6),
                   child: Text(
-                    "Flutter Face",
+                    "Shy UI",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
