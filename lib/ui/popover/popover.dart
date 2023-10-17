@@ -307,7 +307,7 @@ class Popover extends StatelessWidget {
     switch (placement) {
       case Placement.top || Placement.topLeft || Placement.topRight:
         return DotPosition(
-          top: distance.dy - dotHeight - dotHeight / 4 - _getRunSpacing(),
+          top: distance.dy - dotHeight - dotHeight / 4 - _getRunSpacing() - 1,
           left: distance.dx + size.width / 2 - dotWidth / 2 + dotSpacing,
           angle: pi / 4,
         );
