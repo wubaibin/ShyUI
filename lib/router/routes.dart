@@ -46,6 +46,9 @@ abstract class AppRoutes {
   /// 下拉菜单
   static const dropDownMenuPage = '/dropDownMenu';
 
+  /// 弹出下拉气泡框
+  static const popoverPage = '/popover';
+
   /// 加载
   static const loadingPage = '/loading';
 

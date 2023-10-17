@@ -1,3 +1,4 @@
+import 'package:shy_ui/pages/Popover/index.dart';
 import 'package:shy_ui/pages/app_bar/index.dart';
 import 'package:shy_ui/pages/button/index.dart';
 import 'package:shy_ui/pages/checkbox/index.dart';
@@ -109,6 +110,11 @@ class AppPages {
       name: AppRoutes.dropDownMenuPage,
       page: () => const DropDownMenuPage(),
       binding: DropDownMenuBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.popoverPage,
+      page: () => const PopoverPage(),
+      binding: PopoverBinding(),
     ),
     GetPage(
       name: AppRoutes.loadingPage,
